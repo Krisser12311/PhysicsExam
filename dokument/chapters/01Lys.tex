@@ -11,6 +11,7 @@
         \begin{math}v\end{math} & bølgens udbredelseshastighed & \begin{math}m s^{-1}\end{math}\\
         \begin{math}\lambda\end{math} & bølgelængde & m \\
         \begin{math}f\end{math} & frekvens & Hz \\
+        \begin{math}T\end{math} & periode & s \\
         \begin{math}I\end{math} & indfaldsvinkel & grader \\
         \begin{math}B\end{math} & brydningsvinkel & grader \\
         \begin{math}I_c\end{math} & kritisk vinkel & grader \\
@@ -22,6 +23,19 @@
 \subsection{Beregn lysets frekvens i luft når bølgelængden er 560nm}
 For at finde frem til frekvensen ved en bølgelængde på 560 nm må følgende formel anvendes:
 \begin{equation*}
+    v=\frac{\lambda}{T}
+\end{equation*}
+Vi ved, at perioden\begin{math}T\end{math} og frekvensen \begin{math}f\end{math} er relateret ved:
+\begin{equation*}
+    f=\frac{1}{T}
+\end{equation*}
+Dette betyder, at frekvensen er det inverse af perioden. Hvis perioden (\begin{math}T\end{math}) er lang, vil frekvensen (\begin{math}f\end{math}) være lav, og omvendt.\\\\
+Hvis \begin{math}T\end{math} erstattes med \begin{math}\frac{1}{f}\end{math}
+\begin{equation*}
+    v=\frac{\lambda}{\frac{1}{f}}
+\end{equation*}
+For at få \begin{math}f\end{math} til at stå alene ganges der nu med \begin{math}1/f\end{math} på begge sider af lighedstegnet. 
+\begin{equation*}
     v=\lambda \cdot f
 \end{equation*}
 For at finde frekvensen isoleres f på den ene side af lighedstegnet. Dette gøres ved at dividere med bølgelængden.
@@ -30,7 +44,7 @@ For at finde frekvensen isoleres f på den ene side af lighedstegnet. Dette gør
 \end{equation*}
 Herefter indsættes værdierne i formlen og regnes ud. Det er opgivet at lysets hastighed er \begin{math}3,00 10^{8} m/s\end{math}. Og at lysets bølgelængde er 560 nm. Hvilket svarer til 560 x 10\textsuperscript{-9} m.
 \begin{equation*}
-    f=\frac{3,00 \cdot 10^{8} m s^{1}}{560 \cdot 10^{-9} m}
+    f=\frac{3,00 \cdot 10^{8} m/s}{560 \cdot 10^{-9} m}
 \end{equation*}
 Da m går ud med m så har man kun tilbage at:
 \begin{equation*}
@@ -40,7 +54,7 @@ For at omskrive \begin{math}s^{-1}\end{math} til Hz anvender man det faktum at 1
 \textbf{\begin{equation*}
     \mathcolorbox{yellow}{f=5,36 \cdot 10^{14} Hz}
 \end{equation*}}
-En ting der er værd at vide er at \begin{math}v\end{math} også kendt som \begin{math}v_b\end{math} er bølgens udbredelseshastighed. Bølgens udbredelseshastighed er den hastighed, hvormed en bølge bevæger sig gennem et medium. 
+% TODO: vurder om dette afsnit skal stå i teksen. En ting der er værd at vide er at \begin{math}v\end{math} også kendt som \begin{math}v_b\end{math} er bølgens udbredelseshastighed. Bølgens udbredelseshastighed er den hastighed, hvormed en bølge bevæger sig gennem et medium. 
 \subsection{Beregn brydningsvinklen når indfaldsvinklen er 15. Lav en skite der ilustrerer brydningen}
 For at finde frem til brydningsvinklen skal man bruge snells lov. Snells lov er en lov der beskriver hvordan lys brydes når det går fra et matriale til et andet. Brydningen skyldes hastighedsforskellen i de to materialer. Her er I indfaldsvinklen og B brydningsvinklen. 
 \begin{equation*}
