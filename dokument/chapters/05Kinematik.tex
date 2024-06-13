@@ -1,15 +1,19 @@
 \section{Kinematik}
 \subsection{Beregn murstenens position efter 0,1s}
 Først start med at identificer de kendte værdier:
-\item Startposition: 50 meter
-\item Start hastighed 0 m/s (da den falder frit fra hvile position)
-\item Tid: 0,1 sekunder
-\item Tyngdeacceleration: 9,81 m/s^2 
+
+Startposition: 50 meter
+Start hastighed 0 m/s (da den falder frit fra hvile position)
+Tid: 0,1 sekunder
+\begin{equation*}
+    \mathcolorbox{yellow}{Tyngdeacceleration: 9,82m/s^{2}}
+\end{equation*}
+
 
 \subsubsection{Brug den kinematiske formel for position}
 Den generelle formel for position ved frit fald er:
 \begin{equation*}
-    \mathcolorbox{yellow}{s(t)=s_0+v_0t+1/2gt^<{2}}
+    \mathcolorbox{yellow}{s(t)=s_0+v_0t+1/2gt^{2}}
 \end{equation*}
 
 \subsubsection{Indsæt værdierne i formlen}
@@ -22,8 +26,25 @@ Den generelle formel for position ved frit fald er:
     \mathcolorbox{yellow}{s(0,1)=50+0+1/2\cdot9,81\cdot0,01}
 \end{equation*}
 \begin{equation*}
-    \mathcolorbox{yellow}{s(0,1)=50+0,04905}
+    \mathcolorbox{yellow}{s(0,1)=50-0,04905}
 \end{equation*}
 \begin{equation*}
-    \mathcolorbox{yellow}{s(0,1)=50,04905}
+    \mathcolorbox{yellow}{s(0,1)=49,95m}
 \end{equation*}
+Murstenens position efter 0,1s er 49,95m
+
+\subsection{Bestem hvor lang tid der går, inden murstenen rammer jorden}
+
+Først identificer vi de kendte værdier som er brugt ovenover
+
+\subsubsection{Brug den kinematiske formel for position}
+\begin{equation*}
+    \mathcolorbox{yellow}{1/2\cdot g\cdot t^{2}=s}
+\end{equation*}
+Indsæt værdierne
+\begin{equation*}
+    \mathcolorbox{yellow}{1/2\cdot9,82m/s^{2}\cdot t^{2}=50m}
+\end{equation*}
+Dette giver t = 3,191s. Hvilket betyder at der går 3,191s før murstenen rammer jorden.
+
+
