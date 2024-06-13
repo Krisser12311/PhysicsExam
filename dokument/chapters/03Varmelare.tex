@@ -1,29 +1,16 @@
 \section{Varmelære}
 \subsection{Beregn varmen der skal bruges til at opvarmningen af vandet når det varmes fra 10 grader til 100 grader}
-For at finde den varme der kræves for at opvarme vandet fra 10 grader til 100 grader kan beskrives ved formlen: 
+For at bergne hvor meget varme der skal til for at opvarme vandet fra 10 grader til 100 grader anvendes følgende formel:
+\begin{math}Q=m \cdot c \cdot \Delta T\end{math} Her er \begin{math}m\end{math} massen, \begin{math}c\end{math} den specefikke varmekapacitet og \begin{math}\Delta T\end{math} temperaturforskellen. I opgaven her antager vi at densiten er 1000 kg/m\textsuperscript{3} og volumen er 0,8 L. Og 0,8 L er derfor lig med 0,8 kg.
+Værdierne indsættes i formlen:
 \begin{equation*}
-    Q=m \cdot c \cdot \Delta T
+    Q =  0,8 kg \cdot 4184 \frac{J}{kg \cdot  ^{\circ}C} \cdot 90^{\circ}C 
 \end{equation*}
-Her er \begin{math}m\end{math} masssen, \begin{math}c\end{math} (\begin{math}
-    \frac{J}{kg \cdot K}
-\end{math}) er den specefikke varmekapacitet og $\Delta T$ er temperaturforskellen. Og Q er den varme der kræves (Joule)
-For at finde massen skal man sige: 
+Da kg går ud med kg og grader celcus går ud med grader celcus, er der kun Joule tilbage, og det var også den forventede enhed.
 \begin{equation*}
-    m=\rho \cdot V
+    \mathcolorbox{yellow}{Q= 301248 J}
 \end{equation*}
-Her er $\rho$ densitet og V volumen.
-\begin{equation*}
-    m=997 \frac{kg}{m^3} \cdot 0,8 L
-\end{equation*}
-\begin{equation*}
-    m=0,8 \cdot 10^{-3} m^3  \cdot 100 \frac{kg}{m^3}=0,08 kg
-\end{equation*}
-\begin{equation*}
-    Q=0,8 kg \cdot 4180 \frac{J}{kg \cdot C} \cdot 90C
-\end{equation*}
-\begin{equation*}
-    \mathcolorbox{yellow}{Q=301100 J}
-\end{equation*}
+
 \subsection{Beregn elkedlens nyttet virkning og forklar forskællen mellem energiforbruget og varmen der er tilført vandet.}
 For at finde elkedlens nyttet virkning skal man bruge følgende formel: 
 \begin{equation*}
@@ -32,14 +19,14 @@ For at finde elkedlens nyttet virkning skal man bruge følgende formel:
 Dog kan man ikke bare sætte tallene ind i formlen da man har fået givet den brugte energi i kwH og ikke i Joules. 
 Derfor må man omregne det til Joules:
 \begin{equation*}
-    1 kWh=3,6 \cdot 10^6 J
+    1 kWh = 3,6 \cdot 10^6 J
 \end{equation*}
 Det vil sige at de 0,134 kWh er lig med:
 \begin{equation*}
-    0,134 kWh=0,134 kWh \cdot 3,6 \cdot 10^6 J
+    0,134 kWh = 0,134 kWh \cdot 3,6 \cdot 10^6 J
 \end{equation*}
 \begin{equation*}
-    \mathcolorbox{yellow}{0,134 kWh=482400 J}
+    \mathcolorbox{yellow}{0,134 kWh = 482400 J}
 \end{equation*}
 Nu kan der bare indsættes i formlen:
 \begin{equation*}
@@ -49,8 +36,39 @@ Nu kan der bare indsættes i formlen:
     \mathcolorbox{yellow}{\eta=62\%}
 \end{equation*}
 
+Der er flere faktorer som kommer i spil angående energiforbruget og den tilførte varme, dette er ting som:
+\begin{itemize}
+    \item Varme tab til omgivelserne
+    \begin{itemize}
+        \item Varme tab til omgivelserne refererer til den energi, der går tabt fra opvarmningsprocessen til den omgivende luft og andre materialer omkring varmekilden.
+    \end{itemize}
+    \item Varme tab til elkedlen
+    \begin{itemize}
+        \item Der vil være lidt tab til elkedlen selv, da den også vil blive opvarmet.
+    \end{itemize}
+    \item Varme tab til ledninger
+    \begin{itemize}
+        \item Alle ledninger har en vis modstand, og denne modstand vil omdanne dele af energien tilført til varme fordelt på ledningen. 
+    \end{itemize}
+\end{itemize}
+
 \subsection{Beregn fællestemperaturen af tekanden og vandet når der er indtrådt termisk ligevægt}
-For at finde fællestemperaturen skal man bruge følgende formel:
+For at denne opgave kan laves skal konceptet af varmebalance bruges som siger at den varme, der afgives af 
+det varme vand, er lig den varme, der optages af tekanden, da der ingen varmetab er til omgivelserne. Her 
+bruges formlen:
 \begin{equation*}
-    T_{fælles}= \frac{m_a \cdot C_a \cdot T_a + m_v c_v \cdot T_v}{m_g}
+    T_{fælles}= \frac{m_v \cdot c_v \cdot T_v + m_k \cdot c_k \cdot T_k}{c_v \cdot m_v + c_k \cdot m_k}
 \end{equation*} % todo make fælles temperatur
+Den specefikke varmekapaciteten er defineret som varmekapacitet delt med massen. \begin{math}c = \frac{C}{m}\end{math} hvilket medføre at \begin{math}c = \frac{\frac{Q}{\Delta T}}{m}\end{math}. Hviæket bliver til \begin{math}c = \frac{Q}{m \cdot \Delta T}\end{math}. Enheden bliver derfor \begin{math}\frac{J}{kg \cdot ^{\circ}C}\end{math} eller \begin{math}\frac{J}{kg \cdot K}\end{math}. Da en temperatur ændring i grader celcus er det samme som en temperatur ændring i Kelvin. Kan man blot ændre sådan at man har fælles enhed. I opgaven her har man anvendt Kelvin
+\begin{equation*}
+    T_{fælles}= \frac{0,6 kg \cdot 4184 \frac{J}{kg \cdot  K} \cdot 373,15 K + 0,75 kg \cdot 0,800 \cdot 10^3 \frac{J}{kg \cdot K} \cdot 295,15K}{0,6 kg \cdot 4184 \frac{J}{kg \cdot K} + 0,75 kg \cdot 0,800 \cdot 10^3 \frac{J}{kg \cdot K}}     
+\end{equation*}
+\begin{equation*}
+    \mathcolorbox{yellow}{T_{fælles}= 358,10 K}
+\end{equation*}
+\begin{equation*}
+\mathcolorbox{yellow}{T_{fælles}= 85^{\circ}C}
+\end{equation*}
+
+	 
+    
