@@ -28,14 +28,14 @@ For at beregne kobbertrådens radius kan vi bruge følgende formel:
 \begin{equation*}
     R=\rho\cdot\frac{l}{A}
 \end{equation*}
-R = Modstand i ohm (~$\Omega$)\newline
+R = Modstand i ohm [~$\Omega$]\newline
 \begin{math}
     \rho = \text{Resistivitet (for kobbertråden er den på } 0.0155 \frac{\Omega \cdot mm^{2}}{m})
 \end{math}\newline
 l = Længden af kobbertråden\newline
 A = Tværsnitsarealet\newline
 
-For at bruge denne formel skal vi have isoleret A og derfor bliver formlen til.
+For at bruge denne formel skal vi have isoleret A, som vi gør ved at gange med A på begge sider og derefter dividere med R på begge sider. Derfor kommer formlen til at se sådan ud.
 \begin{equation*}
     A=\frac{l\cdot\rho}{R}
 \end{equation*}
@@ -46,16 +46,21 @@ Nu kan vi indsætte vores værdier
 \begin{equation*}
     A=\frac{0,93mm^{2}}{5\Omega}=0,186mm^{2}
 \end{equation*}
-Nu har vi arealet af en cirkel som betyder at vi kan bruge bruge formlen for arealet af en cirkel og isolere radiussen
+Nu har vi arealet af en cirkel som betyder at vi kan bruge bruge formlen for arealet af en cirkel og isolere radiussen ved at dividere med ~$\pi$ på begge sider.
 \begin{equation*}
     A=\pi*r^{2}
 \end{equation*}
 \begin{equation*}
+    \frac{A}{\pi}=r^{2}
+\end{equation*}
+\begin{equation*}
     r^{2}=\frac{A}{\pi}
 \end{equation*}
+Nu når radiussen er blevet isoleret skal gøre så radius ikke er opløftet med 2 ved at tage kvadratroden på begge sider.
 \begin{equation*}
     r=\sqrt{\frac{A}{\pi}}
 \end{equation*}
+Nu med vores nye formel kan vi indtaste vores værdier og få en radius ud af den.
 \begin{equation*}
     r=\sqrt{\frac{0,186mm^{2}}{\pi}} = \sqrt{\frac{0,186}{\pi}} = 0,243mm
 \end{equation*}

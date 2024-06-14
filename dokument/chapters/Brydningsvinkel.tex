@@ -6,7 +6,11 @@ Formålet med forsøgene er at undersøge, hvorvidt brydningsloven stemmer overe
 Når lys går fra et materiale til et andet, vil det brydes, fordi lyset bevæger sig med en forskellig hastighed baseret på hvilket stof det går igennem, dette sker fordi at der er forskellig modstand alt efter hvilket materiale der er tale om, forholdet mellem de to forskellige hastigheder kaldes brydningsindeks. Det kan beregnes ved at bruge formlen: \begin{math}n = \frac{c}{v_{stof}}\end{math}, n er brydningsindeks, c er lysets hastighed og \begin{math}v_{stof}\end{math} er lysets hastighed i et specifikt stof. Brydningsindekset for plexiglas er 1,49 og for luft er brydningsindekset på 1. Hvis man har brug for at udregne brydningsvinklen af lys der går igennem to materialer ved en specifik vinkel kan man bruge formlen: \begin{math}sin(b) = \frac{sin(i)}{n_{2}/n_{1}}\end{math} eller \begin{math}sin(b) = sin(i) \cdot \frac{n_{1}}{n_{2}}\end{math}\newline
 Hvor i er indfaldsvinklen, b er brydningsvinklen, n1 er brydningsindekset for stof et og n2 er brydningsindekset for stof to.\newline
 Hvis lyset kommer fra et materiale til et andet materiale med en høj brydningsindeks til lav brydningsindeks og hvis vinklen er stor nok, vil der komme en totalrefleksion, som betyder at alt lys bliver reflekteret og ikke går igennem det andet materiale, vinklen kan udregnes ved brug af \begin{math}sin(i_{c}) = \frac{n_{2}}{n_{1}}\end{math}.
-
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.25\textwidth]{figures/brydningsvinkeleksempel.png}
+    \caption{Eksempel på brydningsvinkel}
+\end{figure}
 \subsection{Hypotese}
 I det at to materialer mødes vil der ske en brydning, det sker fordi lyset skifter hastighed når det går igennem to forskellige materialer, den præcise brydningsvinkel kan beregnes ved brug af \begin{math}\frac{sin(i)}{sin(b)} = \frac{n_{2}}{n_{1}}\end{math} og derfor kan det bevises at formlen passer overens med virkeligheden.\newline
 Ved en specifik vinkel, hvis lyset kommer fra et materiale med en høj brydningsindeks til et andet materiale med en lav brydningsindeks vil alt lys blive reflekteret, denne specifikke vinkel kan beregnes ved brug af \begin{math}sin(i_{c}) = \frac{n_{2}}{n_{1}}\end{math} og derfor kan det også vises at denne formel passer overens med virkeligheden.
@@ -97,6 +101,28 @@ Procent Gennemsnit
 \begin{equation*}
     \frac{2,92\% + 2,08\% + 3,21\% + 1,69\% + 3,31\% + 3,95\% + 2,66\% + 1,50\% + 1,98}{9} = 2,59\%
 \end{equation*}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/brydningsvinkelforsoggraf.png}
+    \caption{Forsøg data indtastet i GeoGebra}
+\end{figure}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/brydningsvinkelforsoggraf2.png}
+    \caption{Graf over forsøgets data}
+\end{figure}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.45\textwidth]{figures/brydningsvinkelteorigraf.png}
+    \caption{Teori data indtastet i GeoGebra}
+\end{figure}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/brydningsvinkelteorigraf2.png}
+    \caption{Graf over teoriens data}
+\end{figure}
+\newpage
 
 \subsection{Diskussion}
 Tager man udgangspunkt i graferne og i procent beregningerne kan man se at vores resultater har været rimelig tæt på hvad de skulle have været, inden for de 2,589\% af hvad formlen har sagt det skulle være. Vi tror at den største grund til at vi ikke er tættere er at vi ikke kan måle vinklen helt præcist og det er fordi at det er nok umuligt for et menneske at kunne gøre dette uden instrumenter der kan måle vinklen mere specifikt. Med en R2-værdi på 0,96 kan man godt sige at grafen er sikker dog er der selvfølgelig stadig usikkerhed, i dette tilfælde hvor en grad kan have stor betydning kan det dog stadig godt have en effekt at R2  ikke er tættere på 1. Hvis man kigger på det resultat vi fik til totalrefleksion kan man også se at vi var rimelig tæt på igen, 1,965\% væk fra hvad resultatet ville have været ifølge formlen. Selv om alt det her siger at vi var tætte på at ramme helt rigtigt, kan man ikke endeligt konkludere noget, da der ikke er lavet dobbelt bestemmelse.

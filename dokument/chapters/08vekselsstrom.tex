@@ -1,6 +1,11 @@
 \newpage
 \section{Eksamensopgave 8 - Vekselsstrøm}
 \subsection{Kurven viser spændingsvariationer på en strømforsyning. Bestem maksimalspænidng, effektivspænding og frekvens.}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/vekselsstrom.png}
+    \caption{Kurve over vekselsstrøm}
+\end{figure}
 For at finde maks spænding \begin{math}U_{max}\end{math} kan vi kigge på den graf som vi har fået. På grafen kan vi se at den ikke går over 20V eller under 20V som betyder at maksimalspændingen er 20V\newline
 For at finde effektivspænding kan vi bruge denne formel:
 \begin{equation*}
@@ -9,7 +14,10 @@ For at finde effektivspænding kan vi bruge denne formel:
 \begin{equation*}
     U_{max} = \sqrt{2}\cdot U_{eff}
 \end{equation*}
-Denne formel bruges til at finde maksimalspændingen med effektivspænding, men da vi allerede kender maksimalspændingen kan vi isolere effektivspænding og beregne den ud fra den nye formel.
+Denne formel bruges til at finde maksimalspændingen med effektivspænding, men da vi allerede kender maksimalspændingen kan vi isolere effektivspænding ved at dividere med \begin{math}\sqrt{2}\end{math} på begge sider og beregne den ud fra den nye formel.
+\begin{equation*}
+    \frac{U_{maks}}{\sqrt{2}}=U_{eff}
+\end{equation*}
 \begin{equation*}
     U_{eff}=\frac{U_{maks}}{\sqrt{2}}
 \end{equation*}
@@ -34,7 +42,7 @@ U står for spændingen\newline
 N står for antal spoler\newline
 S Står for sekundær\newline
 P står for primær\newline
-Med denne formel kan vi nu isolere \begin{math}U_{s}\end{math} og indtaste værdierne.
+Med denne formel kan vi nu isolere \begin{math}U_{s}\end{math} ved at gange med \begin{math}U_{p}\end{math} på begge sider og indtaste værdierne.
 \begin{equation*}
     U_{s}=U_{p}*\frac{N_{s}}{N_{p}}
 \end{equation*}
