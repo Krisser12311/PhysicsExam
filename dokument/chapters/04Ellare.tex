@@ -1,17 +1,23 @@
 \newpage
 \section{Eksamensopgave 4 - Ellære}
 \subsection{Beregn erstatningsresistansen i resistorkoblingen}
-I denne opgave skal i beregne modstanden for en parallel forbindelse som også har en serie forbindelse.
-Først beregner vi den serie forbindelse i toppen med formlen:
+Når man beregner erstatningsresistansen i en resistorkobling, ønsker man at finde én enkelt resistor, som kan erstatte hele koblingen og have samme samlede modstand. Kan man starte med at finde de resistorer der sidder i parallelforbindelsen, og beregne deres erstatningsresistansen. 
+I denne opgave skal i beregne modstanden for en parallel forbindelse som også har en serie forbindelse. Dog inden man gør det angiver man hvad man vil kalde ens modstande for ikke at der bilver forvirrene.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/resistans.png}
+    \caption{Indtegning af navne samt resistorkobling}
+\end{figure}
+Herefter skal man finde frem til værdien for den samlede erstatningsresistansen, da det er i en parallelforbindelsen anvendes formlen for en parallelforbindelse.
 \begin{equation*}
-    R=R_{1}+R_{2}
+    R_{12}=R_{1}+R_{2}
 \end{equation*}
 \begin{equation*}
-    R=5\Omega+21\Omega=26\Omega
+    \mathcolorbox{yellow}{R=5\Omega+21\Omega=26\Omega}
 \end{equation*}
 Formlen for en parallel forbindelse ser sådan ud:
 \begin{equation*}
-    \frac{1}{R}=\frac{1}{R_{1}}+\frac{1}{R_{2}}
+    \frac{1}{R_{total}}=\frac{1}{R_{1}}+\frac{1}{R_{2}}
 \end{equation*}
 \begin{equation*}
     \frac{1}{R}=\frac{1}{26\Omega}+\frac{1}{120\Omega}=0,04679\Omega^{-1}=21,37\Omega
