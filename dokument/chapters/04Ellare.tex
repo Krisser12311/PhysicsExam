@@ -2,13 +2,14 @@
 \section{Eksamensopgave 4 - Ellære}
 \subsection{Beregn erstatningsresistansen i resistorkoblingen}
 Når man beregner erstatningsresistansen i en resistorkobling, ønsker man at finde én enkelt resistor, som kan erstatte hele koblingen og have samme samlede modstand. Kan man starte med at finde de resistorer der sidder i parallelforbindelsen, og beregne deres erstatningsresistansen. 
-I denne opgave skal i beregne modstanden for en parallel forbindelse som også har en serie forbindelse. Dog inden man gør det angiver man hvad man vil kalde ens modstande for ikke at der bilver forvirrene.
+I denne opgave skal i beregne modstanden for en parallel forbindelse som også har en serie forbindelse. Dog inden man gør det angiver man hvad man vil kalde ens modstande for ikke at der bilver forvirrene.\newline
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.5\textwidth]{figures/resistans.png}
     \caption{Indtegning af navne samt resistorkobling}
 \end{figure}
-Herefter skal man finde frem til værdien for den samlede erstatningsresistansen, da det er i en parallelforbindelsen anvendes formlen for en parallelforbindelse.
+\newline
+Herefter skal man finde frem til værdien for den samlede erstatningsresistansen, da der er en serieforbindelse skal vi først beregne den samlede modstand af den før vi kan beregne parallelforbindelsen.
 \begin{equation*}
     R_{12}=R_{1}+R_{2}
 \end{equation*}
@@ -20,7 +21,7 @@ Formlen for en parallel forbindelse ser sådan ud:
     \frac{1}{R_{total}}=\frac{1}{R_{1}}+\frac{1}{R_{2}}
 \end{equation*}
 \begin{equation*}
-    \frac{1}{R}=\frac{1}{26\Omega}+\frac{1}{120\Omega}=0,04679\Omega^{-1}=21,37\Omega
+    \mathcolorbox{yellow}{\frac{1}{R}=\frac{1}{26\Omega}+\frac{1}{120\Omega}=0,04679\Omega^{-1}=21,37\Omega}
 \end{equation*}
 
 \subsection{Modstanden på 5~$\Omega$ laves af en kobbertråd med længden 60m. Bestem trådens radius.}
@@ -44,7 +45,7 @@ Nu kan vi indsætte vores værdier
     A=\frac{60m\cdot0,0155\frac{\Omega\cdot mm^{2}}{m}}{5\Omega}
 \end{equation*}
 \begin{equation*}
-    A=\frac{0,93mm^{2}}{5\Omega}=0,186mm^{2}
+    \mathcolorbox{yellow}{A=\frac{0,93mm^{2}}{5\Omega}=0,186mm^{2}}
 \end{equation*}
 Nu har vi arealet af en cirkel som betyder at vi kan bruge bruge formlen for arealet af en cirkel og isolere radiussen ved at dividere med ~$\pi$ på begge sider.
 \begin{equation*}
@@ -62,7 +63,7 @@ Nu når radiussen er blevet isoleret skal gøre så radius ikke er opløftet med
 \end{equation*}
 Nu med vores nye formel kan vi indtaste vores værdier og få en radius ud af den.
 \begin{equation*}
-    r=\sqrt{\frac{0,186mm^{2}}{\pi}} = \sqrt{\frac{0,186}{\pi}} = 0,243mm
+    \mathcolorbox{yellow}{r=\sqrt{\frac{0,186mm^{2}}{\pi}} = \sqrt{\frac{0,186}{\pi}} = 0,243mm}
 \end{equation*}
 
 \subsection{Et batteri med hvilespændingen 1,4V og en indre modstand på 0,5~$\Omega$ tilsluttes resistorkoblingen. Skitser situationen og beregn polspændingen.}
