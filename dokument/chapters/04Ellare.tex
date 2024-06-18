@@ -72,16 +72,28 @@ Nu med vores nye formel kan vi indtaste vores værdier og få en radius ud af de
     \includegraphics[width=0.5\textwidth]{figures/ellareskitse.png}
     \caption{Skitse af situationen}
 \end{figure}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/ellareskitseBille.png}
+    \caption{Skitse af situationen, forbedret. Cirklen med V i er et voltmeter/spændingens måler og viser $U_{pol}$.}
+\end{figure}
 For at beregne polspændingen skal vi først have en formel.\newline
 Først starter vi med Ohms low, hvor U er spændingen, R er modstanden og I er strømmen.
 \begin{equation*}
     U = R \cdot I
 \end{equation*}
-Derefter defineres $U_{Hvile}$ som en spænding over to serieforbindelser med modstandende, $R_{Indre}$ og $R_{Ydre}$ og strømmen I
+Det betyder vi kender spændingen over de to modstande
 \begin{equation*}
-    U_{Hvile} = (R_{Indre} + R_{Ydre}) \cdot I
+    U_{indre} = R_{Indre} \cdot I
 \end{equation*}
-Det næste der sker er at formlen omskrives så der bliver ganget ind i parentesen og bliver derfor til.
+\begin{equation*}
+    U_{Ydre} = R_{Ydre} \cdot I
+\end{equation*}
+Derefter defineres $U_{Hvile}$ som er spændingen over batteriet når der ikke løber strøm igennem. Og det er summen af de to spændinger, som er den samlede spændingsforskel over batteriet.
+\begin{equation*}
+    U_{Hvile} = U_{Indre} + U_{Ydre}
+\end{equation*}
+Så kan man sætte ohms lov ind i formlen for $U_{Indre}$ og $U_{Ydre}$ til at blive til $R_{Indre} \cdot I$ og $R_{Ydre} \cdot I$.
 \begin{equation*}
     U_{Hvile} = R_{Indre} \cdot I + R_{Ydre} \cdot I
 \end{equation*}
