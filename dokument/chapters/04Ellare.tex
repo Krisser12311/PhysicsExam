@@ -14,14 +14,18 @@ Herefter skal man finde frem til værdien for den samlede erstatningsresistansen
     R_{12}=R_{1}+R_{2}
 \end{equation*}
 \begin{equation*}
-    \mathcolorbox{yellow}{R=5\Omega+21\Omega=26\Omega}
+   R=5\Omega+21\Omega=\mathcolorbox{yellow}{26\Omega}
 \end{equation*}
-Formlen for en parallel forbindelse ser sådan ud:
+Da de er parallel skal man huske at tage den reciprokke værdi til sidst. For at beregne den samlede modstand af en parallelforbindelsen anvdendes følgende formel, som basseres på Kirshoffs 1. lov, det Kirshoffs første lov siger er at $I_{1} = I_2 + I_3$ Altså at strømmen der går gennem et knudepunkt er lig den strøm der går ud af knudepunktet.
 \begin{equation*}
     \frac{1}{R_{total}}=\frac{1}{R_{1}}+\frac{1}{R_{2}}
 \end{equation*}
 \begin{equation*}
-    \mathcolorbox{yellow}{\frac{1}{R}=\frac{1}{26\Omega}+\frac{1}{120\Omega}=0,04679\Omega^{-1}=21,37\Omega}
+    R_{total}=\left(\frac{1}{26\Omega}+\frac{1}{120\Omega}\right)^{-1}
+\end{equation*}
+
+\begin{equation*}
+    R_{total}=\mathcolorbox{yellow}{21,37\Omega}
 \end{equation*}
 
 \subsection{Modstanden på 5~$\Omega$ laves af en kobbertråd med længden 60m. Bestem trådens radius.}
@@ -29,12 +33,10 @@ For at beregne kobbertrådens radius kan vi bruge følgende formel:
 \begin{equation*}
     R=\rho\cdot\frac{l}{A}
 \end{equation*}
-R = Modstand i ohm [~$\Omega$]\newline
-\begin{math}
-    \rho = \text{Resistivitet (for kobbertråden er den på } 0.0155 \frac{\Omega \cdot mm^{2}}{m})
-\end{math}\newline
-l = Længden af kobbertråden\newline
-A = Tværsnitsarealet\newline
+R = Modstand i ohm ~$\left[ \Omega \right]$\newline
+    $\rho$ = Resistivitet for kobbertråden er den på $0,0155 \cdot 10^{-6} \Omega$ \newline
+    $l$ = Længden af kobbertråden\newline
+    $A$ = Tværsnitsarealet\newline
 
 For at bruge denne formel skal vi have isoleret A, som vi gør ved at gange med A på begge sider og derefter dividere med R på begge sider. Derfor kommer formlen til at se sådan ud.
 \begin{equation*}
@@ -42,10 +44,10 @@ For at bruge denne formel skal vi have isoleret A, som vi gør ved at gange med 
 \end{equation*}
 Nu kan vi indsætte vores værdier
 \begin{equation*}
-    A=\frac{60m\cdot0,0155\frac{\Omega\cdot mm^{2}}{m}}{5\Omega}
+    A=\frac{60m\cdot0,0155 \cdot 10^{-6} \Omega \cdot m}{5\Omega}
 \end{equation*}
 \begin{equation*}
-    \mathcolorbox{yellow}{A=\frac{0,93mm^{2}}{5\Omega}=0,186mm^{2}}
+    A = \frac{9,3 \cdot 10^{-7} \cdot \Omega \cdot m^{2}}{5 \Omega} = 1,86 \cdot 10^{-7} \cdot m^{2} \approx 0,186 \cdot mm^{2}
 \end{equation*}
 Nu har vi arealet af en cirkel som betyder at vi kan bruge bruge formlen for arealet af en cirkel og isolere radiussen ved at dividere med ~$\pi$ på begge sider.
 \begin{equation*}
@@ -61,9 +63,9 @@ Nu når radiussen er blevet isoleret skal gøre så radius ikke er opløftet med
 \begin{equation*}
     r=\sqrt{\frac{A}{\pi}}
 \end{equation*}
-Nu med vores nye formel kan vi indtaste vores værdier og få en radius ud af den.
+Med den isolerede formel kan værderiene indsættes for at finde radiussen.
 \begin{equation*}
-    \mathcolorbox{yellow}{r=\sqrt{\frac{0,186mm^{2}}{\pi}} = \sqrt{\frac{0,186}{\pi}} = 0,243mm}
+    r=\sqrt{\frac{0,186mm^{2}}{\pi}} = \mathcolorbox{yellow}{0,243 mm}
 \end{equation*}
 \newpage
 \subsection{Et batteri med hvilespændingen 1,4V og en indre modstand på 0,5~$\Omega$ tilsluttes resistorkoblingen. Skitser situationen og beregn polspændingen.}
